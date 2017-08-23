@@ -1,0 +1,21 @@
+.box {
+  border: 1px solid;
+  font-size: 30px;
+}
+a {
+  display: block;
+  width: 100%;
+}
+table {
+  width: 100%;
+  font-size: 30px;
+  border: 1px solid;
+}
+table tr td {
+  text-align: center;
+  border: 1px solid;
+}
+
+table tr th {
+  text-align: center;
+}
