@@ -6,12 +6,12 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>baywater_bus_schedule</name>
+    <name>Copper Beech/Baywater Bus Schedule</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        The Bus schedule for copperbeech and baywater
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="xjcoan@gmail.com" href="http://xjcoan.com">
+        X Coan
     </author>
     <content src="index.html" />
     <access origin="*" />

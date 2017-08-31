@@ -40,6 +40,7 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/timetable.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css" />
     <title>Bus Schedule</title>
@@ -53,76 +54,82 @@
   <br />
 
   <div class="container">
+    <table id="timetable">
+      <thead>
+        <th>Time</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <br />
+
+  <div class="container">
     <div class="row">
 
       <div class="col-sm-4">
-        <a href="copperbeech.html">
-          <div class="box">
-            <div class="page-header">
-              <h2>Copper Beech</h2>
-            </div>
-            <p>
-              Access Schedule for Copper Beech
-            </p>
+        <div class="box" onclick="populateTimeTable('weekday', 'copperbeech')">
+          <div class="page-header">
+            <h2>Copper Beech</h2>
           </div>
-        </a>
+          <p>
+            Access Schedule for Copper Beech
+          </p>
+        </div>
         <br />
       </div>
 
       <div class="col-sm-4">
-        <a href="baywater.html">
-          <div class="box">
-            <div class="page-header">
-              <h2>Baywater</h2>
-            </div>
-            <p>
-              Access Schedule for Baywater
-            </p>
+        <div class="box"  onclick="populateTimeTable('weekday', 'baywater')">
+          <div class="page-header">
+            <h2>Baywater</h2>
           </div>
-        </a>
+          <p>
+            Access Schedule for Baywater
+          </p>
+        </div>
         <br />
       </div>
 
       <div class="col-sm-4">
-        <a href="physics.html">
-          <div class="box">
-            <div class="page-header">
-              <h2>Physics</h2>
-            </div>
-            <p>
-              Access Schedule for the Physics building
-            </p>
+        <div class="box"  onclick="populateTimeTable('weekday', 'physics')">
+          <div class="page-header">
+            <h2>Physics</h2>
           </div>
-        </a>
+          <p>
+            Access Schedule for the Physics building
+          </p>
+        </div>
         <br />
       </div>
 
       <div class="col-sm-4">
-        <a href="pmu.html">
-          <div class="box">
-            <div class="page-header">
-              <h2>PMU</h2>
-            </div>
-            <p>
-              Access Schedule for the Union
-            </p>
+        <div class="box"  onclick="populateTimeTable('weekday', 'pmu')">
+          <div class="page-header">
+            <h2>PMU</h2>
           </div>
-        </a>
+          <p>
+            Access Schedule for the Union
+          </p>
+        </div>
         <br />
       </div>
 
       <div class="col-sm-4">
-        <a href="beering.html">
-          <div class="box">
-            <div class="page-header">
-              <h2>Beering</h2>
-            </div>
-            <p>
-              Access Schedule for Beering Hall
-            </p>
+        <div class="box"  onclick="populateTimeTable('weekday', 'beering')">
+          <div class="page-header">
+            <h2>Beering</h2>
           </div>
-        </a>
+          <p>
+            Access Schedule for Beering Hall
+          </p>
+        </div>
       </div>
+
+      <p onclick="clearTable()">
+        Clear Table
+      </p>
 
     </div>
   </div>
