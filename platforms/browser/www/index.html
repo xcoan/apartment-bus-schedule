@@ -48,7 +48,7 @@
 
 <body>
   <div class="container">
-    <h1>Copper Beech/Baywater Bus Schedule</h1>
+    <h1 id="title"></h1>
   </div>
 
   <br />
@@ -61,6 +61,15 @@
       <tbody>
       </tbody>
     </table>
+
+    <p id="clear" onclick="clearTable()">
+      Clear Table
+    </p>
+
+    <p id="info">
+      Times marked with * are drop off only.
+      All times are aproximate.
+    </p>
   </div>
 
   <br />
@@ -68,68 +77,39 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-4">
+      <div class="col-sm-2">
         <div class="box" onclick="populateTimeTable('weekday', 'copperbeech')">
-          <div class="page-header">
-            <h2>Copper Beech</h2>
-          </div>
-          <p>
-            Access Schedule for Copper Beech
-          </p>
+          <h3>Copper Beech</h3>
         </div>
         <br />
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-2">
         <div class="box"  onclick="populateTimeTable('weekday', 'baywater')">
-          <div class="page-header">
-            <h2>Baywater</h2>
-          </div>
-          <p>
-            Access Schedule for Baywater
-          </p>
+          <h3>Baywater</h3>
         </div>
         <br />
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-2">
         <div class="box"  onclick="populateTimeTable('weekday', 'physics')">
-          <div class="page-header">
-            <h2>Physics</h2>
-          </div>
-          <p>
-            Access Schedule for the Physics building
-          </p>
+          <h3>Physics</h3>
         </div>
         <br />
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-2">
         <div class="box"  onclick="populateTimeTable('weekday', 'pmu')">
-          <div class="page-header">
-            <h2>PMU</h2>
-          </div>
-          <p>
-            Access Schedule for the Union
-          </p>
+          <h3>PMU</h3>
         </div>
         <br />
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-2">
         <div class="box"  onclick="populateTimeTable('weekday', 'beering')">
-          <div class="page-header">
-            <h2>Beering</h2>
-          </div>
-          <p>
-            Access Schedule for Beering Hall
-          </p>
+          <h3>Beering</h3>
         </div>
       </div>
-
-      <p onclick="clearTable()">
-        Clear Table
-      </p>
 
     </div>
   </div>

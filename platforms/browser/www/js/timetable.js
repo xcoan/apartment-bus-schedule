@@ -1,5 +1,13 @@
+$(document).ready(function() {
+  clearTable();
+});
+
 function populateTimeTable(time, building) {
   clearTable();
+  $('table').show();
+  $('#clear').show();
+  $('#info').show();
+  $('#title').text(building.toUpperCase());
   var data;
   var jqxhr = $.getJSON( "js/schedule.json", function(json) {
     data = json;
@@ -18,5 +26,9 @@ function populateTimeTable(time, building) {
 }
 
 function clearTable() {
+  $('table').hide();
   $('table tbody').empty();
+  $('#clear').hide();
+  $('#info').hide();
+  $('#title').text('Copper Beech/Baywater Bus Schedule');
 }

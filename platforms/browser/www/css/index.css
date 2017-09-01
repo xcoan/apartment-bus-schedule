@@ -19,3 +19,11 @@ table tr td {
 table tr th {
   text-align: center;
 }
+
+h1 {
+  text-align: center;
+}
+
+#clear {
+  color: blue;
+}
