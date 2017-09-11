@@ -24,6 +24,9 @@ h1 {
   text-align: center;
 }
 
-#clear {
+.clear {
   color: blue;
+}
+p {
+  display: inline-block;
 }

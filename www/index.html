@@ -56,13 +56,13 @@
   <div class="container">
     <table id="timetable">
       <thead>
-        <th>Time</th>
+        <th><p>Time</p> <p style="text-align: right; float: right;" class="clear" onclick="clearTable()">X</p></th>
       </thead>
       <tbody>
       </tbody>
     </table>
 
-    <p id="clear" onclick="clearTable()">
+    <p class="clear" onclick="clearTable()">
       Clear Table
     </p>
 
@@ -109,6 +109,7 @@
         <div class="box"  onclick="populateTimeTable('weekday', 'beering')">
           <h3>Beering</h3>
         </div>
+        <br />
       </div>
 
     </div>
