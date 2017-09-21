@@ -1,28 +1,26 @@
+var data;
+
 $(document).ready(function() {
   clearTable();
-});
-
-function populateTimeTable(time, building) {
-  clearTable();
-  $('table').show();
-  $('.clear').show();
-  $('#info').show();
-  $('#title').text(building.toUpperCase());
-  var data;
   var jqxhr = $.getJSON( "js/schedule.json", function(json) {
-    data = json;
   })
-    .done(function() {
-      var location = data[time][building]["times"];
-      location.forEach(function(time) {
-        var markup="<tr><td>" + time + "</tr></td>";
-        $("table tbody").append(markup);
-        console.log(time);
-      });
+    .done(function(json) {
+      data = json;
     })
     .fail(function() {
       console.log( "error" );
     })
+});
+
+function populateTimeTable(time, building) {
+  clearTable();
+  showTable();
+  $('#title').text(building.toUpperCase());
+  var location = data[time][building]["times"];
+  location.forEach(function(time) {
+    var markup="<tr><td>" + time + "</tr></td>";
+    $("table tbody").append(markup);
+  });
 }
 
 function clearTable() {
@@ -31,4 +29,10 @@ function clearTable() {
   $('.clear').hide();
   $('#info').hide();
   $('#title').text('Copper Beech/Baywater Bus Schedule');
+}
+
+function showTable() {
+  $('table').show();
+  $('.clear').show();
+  $('#info').show();
 }
